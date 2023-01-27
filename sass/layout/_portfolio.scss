@@ -1,0 +1,13 @@
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.portfolio__main-title {
+    color: $primary-text-color;
+}

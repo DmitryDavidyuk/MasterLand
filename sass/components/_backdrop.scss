@@ -1,0 +1,58 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $backdrop-background-color;
+    opacity: 1;
+
+    transition: opacity $transition-duration $transition-timing-function;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-wrapper {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+}
+
+.modal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    padding: 40px;
+
+    background-color: $background-color-white;
+    box-shadow: $box-shadow;
+    border-radius: 4px;
+    opacity: 1;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $transition-duration $transition-timing-function,
+        opacity $transition-duration $transition-timing-function;
+
+    @include mq(mobile) {
+        width: 450px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @include mq(tablet) {
+        width: 450px;
+        min-height: 609px;
+    }
+
+    @include mq(desktop) {
+        width: 528px;
+        min-height: 581px;
+    }
+}

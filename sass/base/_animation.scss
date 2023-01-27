@@ -1,0 +1,52 @@
+.scene {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    // *width: 370px;
+    // *height: 294px;
+
+    perspective: 600px;
+}
+
+.scene__wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    
+    cursor: pointer;
+
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+
+    .card__link:hover &,
+    .card__link:focus & {
+        transform: rotateY(180deg);
+    }
+}
+
+.scene__face {
+    position: absolute;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: $background-color-white;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    &--back {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        padding: 63px 24px;
+
+        background-color: $background-color-overlay;
+
+        transform: rotateY(180deg);
+    }
+}

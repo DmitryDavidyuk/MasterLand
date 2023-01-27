@@ -1,0 +1,206 @@
+.footer {
+    padding: 60px 0;
+
+    background-color: $background-color-black;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+}
+
+.footer__container {
+    text-align: center;
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        align-items: baseline;
+    }
+}    
+
+.address__container {    
+    @include mq(mobile-only) {
+        text-align: center;
+    }
+    @include mq(desktop) {
+        text-align: left;
+        margin-right: 70px;
+    }
+}    
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.logo--white {
+    color: $background-color-white;
+}
+
+.address {
+    @include mq(not-desktop) {
+        margin-bottom: 60px;
+    }
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include mq(desktop) {
+    margin-bottom: 9px;
+    }   
+}
+
+.address__link {
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition: color $transition-duration $transition-timing-function;
+
+    &--white {
+        color: $background-color-white;
+    }
+
+    &--grey {
+        color: $footer-link-color;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.social__container {
+    @include mq(mobile-only) {
+        margin-bottom: 60px;
+    }
+
+    @include mq(desktop) {
+    margin-right: auto;
+    }
+}
+
+.social__caption {
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    color: $background-color-white;
+
+    @include mq(desktop) {
+    display:flex 
+    }
+
+    @include mq(not-desktop) {
+    text-align: center;
+    }
+}
+
+.social__link--footer {
+    color: $background-color-white;
+    background-color: $footer-background-color;
+
+    transition: background-color $transition-duration $transition-timing-function;
+}
+
+.subscribe {
+    @include mq(not-desktop) {
+        margin-top: 60px;
+    }
+}
+
+.subscribe__caption {
+    display: flex;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    color: $background-color-white;
+
+    @include mq(tablet-only) {
+        display: block;
+    }
+
+    @include mq(mobile-only) {
+        display: block;
+    }
+}
+
+.subscribe__form {
+    display: block;
+
+    @include mq(desktop) {
+    display: flex;
+    align-items: center;
+    }
+}
+
+.subscribe__input {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    cursor: pointer;
+    
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+
+    color: $background-color-white;
+    background-color: $background-color-black;
+    border: 1px solid $footer-border;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    transition: border $transition-duration $transition-timing-function;
+
+    &:focus,
+    &:hover {
+    border-color: $accent-color;
+    outline: 0;
+    }
+
+    @include mq(tablet) {
+        width: 450px;
+    }
+
+    @include mq(desktop) {
+        width: 358px;
+    }
+
+    @include mq(not-desktop) {
+        margin-bottom: 20px;
+    }
+}
+
+.subscribe__label::placeholder {
+    color: $footer-link-color;
+}
+
+.button--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe__icon {
+    margin-left: 10px;
+    fill: currentColor;
+}
+
+.subscribe__form-button {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+  @media screen and (min-width: 250px) {
+    width: 200px;
+    }
+  }

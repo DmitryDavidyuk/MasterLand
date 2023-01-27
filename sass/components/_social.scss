@@ -1,0 +1,36 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    color: $icon-color;
+    background-color: $footer-background-color;
+    border-radius: 50%;
+
+    transition: background-color $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+    color: $icon-color-hover;
+    background-color: $button-color;
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+
+    transition: $transition-duration $transition-timing-function;
+}

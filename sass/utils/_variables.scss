@@ -1,0 +1,49 @@
+//! CSS переменные
+
+    $main-font: 'Roboto', sans-serif;
+    $secondary-font: 'Raleway', sans-serif;
+
+    //* Основной цвет текста */
+    $logo-accent-color: #000000;
+    $primary-text-color: #212121;
+    $title-text-color: #757575;
+    $button-color: #188ce8;
+    $accent-color: #2196F3;
+    $border-bottom-color: #ececec;
+    $background-color-white: #FFFFFF;
+    $background-color-black: #2F303A;
+    $background-color-box: #E5E5E5;
+    $background-color-section-team: #F5F4FA;
+    $container-bg-2: #EEEEEE;
+    $icon-color: #afb1b8;
+    $icon-color-hover: #ffffff;
+    $form-text-color: rgba(33, 33, 33, 0.2);
+    $placeholder-text-color: rgba(117, 117, 117, 0.5);
+    $footer-link-color: rgba(255, 255, 255, 0.6);
+
+    //* Основные фоновые цвета */
+    $primary-background-color: #ffffff;
+    $secondary-background-color: #2f303a;
+    $third-background-color: #f5f4fa;
+    $header-board-color: #ececec;
+    $next-border-color: #eeeeee;
+    $footer-background-color: rgba(255, 255, 255, 0.1);
+    $background-color-overlay: rgba(33, 150, 243, 0.9);
+    $background-thumb: rgba(47, 48, 58, 0.8);
+    $backdrop-background-color: rgba(0, 0, 0, 0.2);
+
+    //* Тени */
+    $shadow-color-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    $shadow-color-portfolio-bt: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    $portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    $box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    //* Анимация */
+    $transition-duration: 250ms;
+    $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    $modal-button-border-close: 1px solid rgba(0, 0, 0, 0.1);
+
+    //* Рамки */
+    $footer-border: rgba(255, 255, 255, 0.3);
+    $form-input-border: 1px solid rgba(33, 33, 33, 0.2);
+    $border-input: 1px solid #2196f3;

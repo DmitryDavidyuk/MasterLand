@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="shortcut icon" href="/favicon.ico/favicon-16x16.png" type="image/x-icon" />
+  </head>
+
+  <!-- !Portfolio menu -->
+
+  <body class="body">
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a
+            class="logo navigation__logo"
+            href="./index.html"
+            lang="en"
+            aria-label="Логотип сайта WebStudio"
+            >Web<span class="logo--black">Studio</span>
+          </a>
+
+          <button
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-button"
+            type="button"
+            data-menu-button
+          >
+            <svg
+              class="menu-button__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="menu-button__icon-menu" href="./images/Icons/sprite.svg#icon-menu"></use>
+              <use
+                class="menu-button__icon-close"
+                href="./images/Icons/sprite.svg#icon-menu-close"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu" id="menu-button" data-menu>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item">
+                <a
+                  href="tel:+380961111111"
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link-phone"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__socials">
+              <li class="mobile-menu__socials-item">
+                <a
+                  class="mobile-menu__socials-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  lang="en"
+                  aria-label="Instagram"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a
+                  class="mobile-menu__socials-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  lang="en"
+                  aria-label="Twitter"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a
+                  class="mobile-menu__socials-link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  lang="en"
+                  aria-label="Facebook"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a
+                  class="mobile-menu__socials-link"
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  lang="en"
+                  aria-label="Linkedin"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- !Portfolio header -->
+
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list">
+          <li class="header__items">
+            <a class="header__contact" href="mailto:info@devstudio.com">
+              <svg class="header__icon header__icon-tablet-email" width="16" height="12">
+                <use href="./images/Icons/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__items">
+            <a class="header__contact" href="tel:+380961111111">
+              <svg class="header__icon header__icon-tablet-phone" width="10" height="16">
+                <use href="./images/Icons/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link mobile-menu__link--active">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__contacts-item">
+            <a
+              href="tel:+380961111111"
+              class="mobile-menu__contacts-link mobile-menu__contacts-link-phone"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__contacts-link mobile-menu__contacts-link-email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              lang="en"
+              aria-label="Instagram"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              lang="en"
+              aria-label="Twitter"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link"
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              lang="en"
+              aria-label="Facebook"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link"
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              lang="en"
+              aria-label="Linkedin"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- !Portflio page button -->
+
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="main-title portfolio__main-title visually-hidden">Наши работы</h1>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button class="filter__btn filter__btn--active">Все</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn">Приложение</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- !Portfolio cards section -->
+
+          <ul class="card">
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+
+                    <!-- !Images for desktop version 1 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-1_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-1_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 1 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-1_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-1_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 1 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-1_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-1_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 1 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-1_sm.jpg"
+                      alt="Разработка веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle">Технокряк</h2>
+                  <p class="card__caption">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+
+                    <!-- !Images for desktop version 2 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-2_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-2_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 2 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-2_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-2_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 2 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-2_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-2_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 2 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-2_sm.jpg"
+                      alt="Разработка веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      Постер — едва ли не первое, что может привлечь внимание зрителя.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                  <p class="card__caption">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+
+                    <!-- !Images for desktop version 3 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-3_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-3_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 3 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-3_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-3_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 3 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-3_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-3_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 3 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-3_sm.jpg"
+                      alt="Создание приложения для ресторана Seafood"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      Основная идея «Коллекция
+                      <span lang="en">seafood</span>» — спецпредложения на морепродукты.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="card__caption">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <!-- !Images for desktop version 4 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-4_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-4_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 4 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-4_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-4_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 4  -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-4_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-4_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 4 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-4_sm.jpg"
+                      alt="Маркетинг для проекта Prime"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      В современном издательском мире каждый автор также должен быть промоутером.
+                      Однако вы не одиноки;
+                      <span lang="en">Project Prime Marketing</span>
+                      предлагает широкий спектр маркетинговых услуг.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle">Проект <span lang="en">Prime</span></h2>
+                  <p class="card__caption">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <!-- !Images for desktop version 5 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-5_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-5_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 5 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-5_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-5_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 5 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-5_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-5_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 5 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-5_sm.jpg"
+                      alt="Разработка и запуск приложения Boxes"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      Общение на понятном всем языке может обеспечить благополучие нашей планеты и
+                      всех ее жителей, ведя нас к мирному сосуществованию.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle">Проект <span lang="en">Boxes</span></h2>
+                  <p class="card__caption">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <!-- !Images for desktop version 6 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-6_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-6_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 6 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-6_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-6_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 6 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-6_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-6_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 6 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-6_sm.jpg"
+                      alt="Разработка и запуск приложения Boxes"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      Дополнение позволяет пользователям
+                      <span lang="en">Windows</span> и <span lang="en">Mac</span> редактировать
+                      контент с сервиса <span lang="en">Box</span>.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle"><span lang="en">Inspiration has no Borders</span></h2>
+                  <p class="card__caption">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <!-- !Images for desktop version 7 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-7_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-7_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 7 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-7_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-7_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 7 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-7_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-7_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 7 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-7_sm.jpg"
+                      alt="Разработка дизайна Limited Edition"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      Особенный дизайн упаковки – это отличный повод повысить продажи, укрепить
+                      репутацию и прорекламировать бренд.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="card__caption">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <!-- !Images for desktop version 8 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-8_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-8_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 8 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-8_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-8_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 8 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-8_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-8_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 8 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-8_sm.jpg"
+                      alt="Маркетинг для проекта LAB"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      За весь период деятельности были реализованы длительные масштабные проекты по
+                      качеству обслуживания и оценке персонала крупных компаний в разных сферах
+                      бизнеса.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle">Проект <span lang="en">LAB</span></h2>
+                  <p class="card__caption">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <div class="card__thumb">
+                  <picture>
+                    <!-- !Images for desktop version 9 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-9_lg.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-9_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- !Images for tablet screens 9 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-9_md.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-9_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- !Images for mobile screens 9 -->
+
+                    <source
+                      srcset="
+                        ./images/Portfolio/photos-our-portfolio-9_sm.jpg    1x,
+                        ./images/Portfolio/photos-our-portfolio-9_sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <!-- !Reliable image 9 -->
+
+                    <img
+                      class="card__image"
+                      src="./images/Portfolio/photos-our-portfolio-9_sm.jpg"
+                      alt="Разработка и тестирование приложения Growing Business"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="card__overlay">
+                    <p class="card__description">
+                      Возможно, самый очевидный способ развития вашего бизнеса — привлечь больше
+                      клиентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__text-wrapper">
+                  <h2 class="card__subtitle" lang="en">Growing Business</h2>
+                  <p class="card__caption">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- !Portfolio footer -->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="address__container">
+          <a class="logo footer__logo" href="index.html" lang="en" aria-label="Логотип футера"
+            >Web<span class="logo--white">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link address__link--white"
+                  href="https://goo.gl/maps/qPdaPdiiLv6fJNoK8"
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link address__link--grey" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link address__link--grey" href="tel:+380991111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- !Portflio footer socials -->
+
+        <div class="social__container">
+          <strong class="social__caption">Присоединяйтесь</strong>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                class="social__link social__link--footer"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener norefferer"
+                lang="en"
+                aria-label="Instagram"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/Icons/sprite.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--footer"
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener norefferer"
+                lang="en"
+                aria-label="Twitter"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/Icons/sprite.svg#icon-twitter-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--footer"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener norefferer"
+                lang="en"
+                aria-label="Facebook"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/Icons/sprite.svg#icon-facebook-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--footer"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener norefferer"
+                lang="en"
+                aria-label="Linkedin"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/Icons/sprite.svg#icon-linkedin-2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <strong class="subscribe__caption">Подпишитесь на рассылку</strong>
+          <form class="subscribe__form">
+            <label class="subscribe__label" for="footer-email"></label>
+            <input
+              class="subscribe__input"
+              type="email"
+              name="telegramnews"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button class="button button--icon subscribe__form-button" type="submit">
+              Подписаться
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/Icons/sprite.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

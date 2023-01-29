@@ -32,8 +32,8 @@
 
     &:focus,
     &:hover {
-    color: $accent-color;
-    border-color: $accent-color;
+    color: $master-orange-color;
+    border-color: $master-orange-color;
     }
 
     @include mq(mobile) {

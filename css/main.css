@@ -1425,7 +1425,7 @@ textarea {
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .navigation__link:hover, .navigation__link:focus {
-    color: #2196F3;
+    color: rgb(255, 140, 0);
   }
   .navigation__link--active {
     position: relative;

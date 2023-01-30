@@ -1,6 +1,7 @@
 const TOKEN = '5977675073:AAGRZsFwWksh60DfRFB9lV5iLRPzee8r1fM';
       const CHAT_ID = '-1001790959821';
-      const URL = `https://api.telegram.org/bot${TOKEN}/SendMessage`
+      const URL = `https://api.telegram.org/bot${TOKEN}/SendMessage`;
+      const modal = document.querySelector("[data-modal]");
 
 document.getElementById('tg-form').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -15,5 +16,10 @@ document.getElementById('tg-form').addEventListener('submit', function(e) {
         chat_id: CHAT_ID,
         parse_mode: 'html',
         text: message,
+    }).then(()=> {
+        this.name.value = '';
+        this.email.value = '';
+        this.tel.value = '';
+        modal.classList.add("is-hidden");
     })
 })

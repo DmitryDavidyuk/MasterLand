@@ -275,13 +275,13 @@
               </svg>
             </button>
 
-            <strong class="form__title">Залиште свої данні і ми вам перезвонимо</strong>
+            <strong class="form__title">Залиште свої данні і ми вам передзвонимо!</strong>
 
             <form class="form" id="tg-form" autocomplete="off" type="submit">
               <label class="form__label">
-                <span class="form__input-headline">Имя</span>
+                <span class="form__input-headline">Ім'я*</span>
                 <span class="form__input-container">
-                  <input class="form__input" type="text" name="name" autofocus />
+                  <input required class="form__input" type="text" name="name" autofocus />
                   <svg class="form__icon" width="18px" height="18px">
                     <use href="./images/Icons/sprite.svg#icon-person"></use>
                   </svg>
@@ -289,9 +289,9 @@
               </label>
 
               <label class="form__label">
-                <span class="form__input-headline">Телефон</span>
+                <span class="form__input-headline">Телефон в форматі 067ххххххх*</span>
                 <span class="form__input-container">
-                  <input class="form__input" type="tel" name="tel" />
+                  <input required class="form__input" type="tel" name="tel" minlength="13" maxlength="13" placeholder="0123456789"/>
                   <svg class="form__icon" width="18px" height="18px">
                     <use href="./images/Icons/sprite.svg#icon-phone"></use>
                   </svg>
@@ -307,7 +307,7 @@
                   </svg>
                 </span>
               </label>
-
+<!-- 
               <label class="form__label-textarea">
                 <span class="form__input-headline">Комментарий</span>
                 <textarea
@@ -316,7 +316,7 @@
                   rows="5"
                   placeholder="Введите текст"
                 ></textarea>
-              </label>
+              </label> -->
 
               <!-- <label class="form__terms-label" for="checkbox">
                 <input class="form__terms-input" type="checkbox" name="terms" id="checkbox" />
@@ -332,6 +332,7 @@
               </label> -->
 
               <button class="button" type="submit">Отправить</button>
+              <p style="font-size: 12px; padding: 5px; color: red;">поля позначенні * є обов'язковими для заповнення</p>
             </form>
           </div>
         </div>

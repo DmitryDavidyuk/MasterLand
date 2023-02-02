@@ -14,35 +14,35 @@
   background-color: $secondary-background-color;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Hero/hero_sm.jpg');
+    url('../images/Hero/hero_mobile.jpg');
 
   @include mq(retina) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/Hero/hero_sm@2x.jpg');
+      url('../images/Hero/hero_mobile@2x.jpg');
   }
 
   @include mq(tablet) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/Hero/hero_md.jpg');
+      url('../images/Hero/hero_tablet.jpg');
 
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/Hero/hero_md@2x.jpg');
+        url('../images/Hero/hero_tablet@2x.jpg');
     }
   }
 
   @include mq(desktop) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/Hero/hero_lg.jpg');
+      url('../images/Hero/hero_desktop.jpg');
 
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/Hero/hero_lg@2x.jpg');
+        url('../images/Hero/hero_desktop@2x.jpg');
     }
   }
 
   max-width: 480px;
-  height: 400px;
+  height: 288px;
 
   @include mq(mobile-only) {
     max-width: 768px;

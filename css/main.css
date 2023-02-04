@@ -1168,7 +1168,7 @@ textarea {
   color: rgba(255, 255, 255, 0.6);
 }
 .address__link:hover, .address__link:focus {
-  color: #2196F3;
+  color: rgba(255, 140, 0, 0.688);
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1266,7 +1266,7 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe__input:focus, .subscribe__input:hover {
-  border-color: #2196F3;
+  border-color: rgba(255, 140, 0, 0.688);
   outline: 0;
 }
 @media screen and (min-width: 768px) {

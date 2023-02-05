@@ -1,53 +1,49 @@
 .hobbies {
-    display: none;
-
-    @include mq(desktop) {
-    display: block;
-    padding-bottom: 94px;
-    }
+  padding-bottom: 94px;
 }
 
 .hobbies__list {
-    @include mq(desktop) {
-    display: flex;
-    }
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  @include mq(mobile){
+    flex-wrap: wrap;
+  }
+  @include mq(tablet){
+    flex-wrap: nowrap;
+  }
 }
 
 .hobbies__item {
-    @include mq(desktop) {
-    position: relative;
+  position: relative;
 
-    margin-right: 30px;
-    
-    &:last-child {
-    margin-right: 0;
-    }
+  // margin-right: 30px;
+  margin-bottom: 5px;
+  &:not(:last-child) {
+    margin-right: 5px;
   }
-}    
+}
 
 .hobbies__thumb {
-    @include mq(desktop) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
-    display: flex;
-    width: 370px;
-    height: 70px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
 
-    background-color: $background-thumb;
-    }
+  background-color: $background-thumb;
 }
 
 .hobbies__thumb-paragraph {
-    @include mq(desktop) {
-    font-weight: 700;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
 
-    color: $background-color-white;
-    }
+  color: $background-color-white;
 }

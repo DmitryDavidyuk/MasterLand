@@ -5,8 +5,9 @@ const modal = document.querySelector("[data-modal]");
 
 document.getElementById('tg-form').addEventListener('submit', function(e) {
     e.preventDefault();
+    let id = 0;
 
-    let message = `<b>Заявка з сайта</b>\n`;
+    let message = `<b>Заявка з сайта ${id}</b>\n`;
     message += `<b>Ім'я </b> ${this.name.value}\n`;
     message += `<b>Phone </b> ${this.tel.value}\n`;
     message += `<b>Email </b> ${this.email.value}\n`;
